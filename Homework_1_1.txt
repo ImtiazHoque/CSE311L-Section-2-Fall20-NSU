@@ -1,0 +1,18 @@
+CREATE DATABASE CSE 311L_SECTION_2_FALL_20;
+
+CREATE Table departments(
+                      
+                       department_id int(4) PRIMARY KEY,
+                       department_Name VARCHAR(30) NOT NULL,
+                       Manager_id int(6),
+                       Location_id int(4));
+
+INSERT INTO departments VALUES
+(10,'Administration',200,1700),
+(20,'Marketing',201,1800),
+(50,'Shipping',124,1500),
+(60,'IT',103,1400),
+(80,'Sales',149,2500),
+(90,'Executive',100,1700),
+(110,'Accounting',205,1700),
+(190,'Contracting',,1700)
