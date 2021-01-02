@@ -1,7 +1,7 @@
 <?php
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
-$link = mysqli_connect("localhost", "root", "", "cse311_section_1");
+$link = mysqli_connect("localhost", "root", "", "Project_Test");
  
 // Check connection
 if($link === false){
@@ -10,6 +10,7 @@ if($link === false){
  
 // Attempt insert query execution
 $sql = "INSERT INTO users (id, username, password) VALUES ('1','demo','demo')";
+
 if(mysqli_query($link, $sql)){
     echo "Records inserted successfully.";
 } else{
