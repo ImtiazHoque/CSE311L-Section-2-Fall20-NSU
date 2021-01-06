@@ -1,0 +1,4 @@
+SELECT sname, age from student
+join department
+where fname LIKE 'Ivana Teach' and major LIKE 'History'
+Group by age DESC

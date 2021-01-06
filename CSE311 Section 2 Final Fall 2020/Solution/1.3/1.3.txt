@@ -1,0 +1,8 @@
+SELECT   DISTINCT S.sname
+FROM student S
+WHERE S.snum IN (SELECT E.snum 
+                FROM course E 
+                GROUP BY E.snum 
+                HAVING   COUNT()>=ALL(SELECT   COUNT()
+                                       FROM course E2
+                                       GROUP BY E2.snum ))

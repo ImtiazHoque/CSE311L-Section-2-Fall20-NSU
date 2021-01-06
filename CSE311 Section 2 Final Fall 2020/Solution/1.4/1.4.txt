@@ -1,0 +1,4 @@
+SELECT DISTINCT S.sname
+FROM student S 
+WHERE S.snum NOT IN(SELECT E.snum
+                    FROM course E )
